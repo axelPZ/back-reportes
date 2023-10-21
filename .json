@@ -1,0 +1,14 @@
+<div *ngIf="Fecha?.invalid && ( Fecha?.touched || Fecha?.dirty )" class="errorInputs">
+    <div *ngIf="Fecha?.errors?.['required']">
+        Los Fecha son requeridos
+    </div>
+    <div *ngIf="Fecha?.errors?.['minLength']">0
+    Los Fecha tienen que tener un minimo de 5 caracteres
+    </div>
+    <div *ngIf="Fecha?.errors?.['maxLength']">
+    Los Fecha tienen que tener un maximo de 15 caracteres
+    </div>
+    <div *ngIf="Fecha?.errors?.['pattern']">
+    Fecha no validos
+    </div>
+</div>
